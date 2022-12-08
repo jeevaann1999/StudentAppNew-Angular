@@ -8,11 +8,16 @@ import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NavigationComponent } from './navigation/navigation.component';
+import { ViewStudentComponent } from './view-student/view-student.component';
 
 const myRoute:Routes=[
   {
     path:"add",
     component:AddStudentComponent
+  },
+  {
+    path:"view",
+    component:ViewStudentComponent
   }
 ]
 
@@ -20,7 +25,8 @@ const myRoute:Routes=[
   declarations: [
     AppComponent,
     AddStudentComponent,
-    NavigationComponent
+    NavigationComponent,
+    ViewStudentComponent
   ],
   imports: [
     BrowserModule,
